@@ -1,0 +1,75 @@
+/* CSS RESETS */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------- */
+
+:root {
+  --primary-clr: #976df2;
+  --secondary-clr: #5f4a8c;
+  --tertiary-clr: #b294f2;
+  --content-clr: #f2f2f2;
+  --dark-clr: #0d0d0d;
+
+  --font-fallback: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  display: grid;
+  grid-template: minmax(100px, 1fr) 4fr / minmax(200px, 1fr) minmax(500px, 5fr);
+  height: 100vh;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+
+  font-family: "Cabin", var(--font-fallback);
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+
+  grid-area: sidebar;
+  background-color: var(--primary-clr);
+  font-size: 1.3rem;
+}
+
+.sidebar .name {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.content {
+  grid-area: content;
+  background-color: var(--content-clr);
+}

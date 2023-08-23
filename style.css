@@ -11,6 +11,15 @@ p {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: "Cabin", var(--font-fallback);
+}
+
 /* -------- */
 
 :root {
@@ -26,7 +35,7 @@ p {
 
 body {
   display: grid;
-  grid-template: minmax(100px, 1fr) 4fr / minmax(200px, 1fr) minmax(500px, 5fr);
+  grid-template: minmax(100px, 1fr) 4fr / minmax(230px, 1fr) minmax(500px, 5fr);
   height: 100vh;
   grid-template-areas:
     "sidebar header"
@@ -35,10 +44,82 @@ body {
   font-family: "Cabin", var(--font-fallback);
 }
 
+/* HEADER STYLES */
 .header {
   grid-area: header;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 2fr 1fr;
+  padding: 2rem;
 }
 
+.header .searchbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header .searchbar input {
+  flex: 1;
+  background-color: var(--content-clr);
+  border: 1px #d9d9d9 solid;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+
+.header .notifications {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .notifications img:first-child {
+  cursor: pointer;
+}
+
+.header .notifications img:last-of-type {
+  border-radius: 60%;
+  border: 1px solid var(--dark-clr);
+}
+
+.header .notifications h1 {
+  font-size: 1.6rem;
+  min-width: max-content;
+}
+
+.header .admin-greeting {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-greeting img:first-child {
+  border-radius: 60%;
+  border: 1px solid var(--dark-clr);
+}
+
+.admin-greeting p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header .header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-buttons button {
+  border: 1px solid var(--dark-clr);
+  background-color: var(--primary-clr);
+  color: var(--content-clr);
+  padding: 10px 1.9rem;
+  border-radius: 1rem;
+}
+
+/* SIDE BAR STYLE */
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -54,6 +135,7 @@ body {
 .sidebar .name {
   display: flex;
   align-items: center;
+  font-size: 2rem;
 }
 
 .sidebar ul {
@@ -65,10 +147,15 @@ body {
 .sidebar li {
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin: 8px 0;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
+.sidebar li:hover {
+  cursor: pointer;
+}
+
+/* CONTENT STYLES */
 .content {
   grid-area: content;
   background-color: var(--content-clr);

@@ -209,6 +209,7 @@ body {
 .project div .project-buttons {
   display: flex;
   flex-direction: row;
+  gap: 4px;
   margin-left: auto;
 }
 

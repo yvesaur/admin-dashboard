@@ -24,17 +24,81 @@ button:hover {
 	cursor: pointer;
 }
 
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* -------- */
 
-:root {
-	--primary-clr: #976df2;
-	--secondary-clr: #5f4a8c;
-	--tertiary-clr: #b294f2;
-	--content-clr: #f2f2f2;
-	--dark-clr: #0d0d0d;
+/* --- Color System URL - ?primary=%23B75037&bodyFont=Roboto+Flex&displayFont=Roboto+Flex&colorMatch=false --- */
 
+:root {
 	--font-fallback: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 	font-family: "Roboto Flex", var(--font-fallback);
+}
+
+body {
+	display: grid;
+	grid-template-areas:
+		"nav header header"
+		"nav main aside";
+	grid-template-columns: 1fr 4fr 1fr;
+	gap: 1rem;
+
+	background-color: var(--md-sys-color-surface);
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+
+	padding: 0 1.5rem;
+
+	background-color: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary);
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.nav-buttons-section > li > a {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.nav-buttons-section > li > a > * {
+	font-size: 1.25rem;
+}
+
+.nav-buttons-section > li:not(:last-child) {
+	margin: 0.75rem 0;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
 }

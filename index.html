@@ -9,10 +9,13 @@
 
 		<link
 			rel="stylesheet"
-			href="modern-normalize.css" />
+			href="stylesheets/modern-normalize.css" />
 		<link
 			rel="stylesheet"
-			href="style.css" />
+			href="stylesheets/colors/light.css" />
+		<link
+			rel="stylesheet"
+			href="stylesheets/style.css" />
 
 		<link
 			rel="shortcut icon"
@@ -27,368 +30,195 @@
 			href="https://fonts.gstatic.com"
 			crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
 			rel="stylesheet" />
 	</head>
-	<body class="dashboard-container">
-		<div class="header">
-			<div class="searchbar">
-				<label for="search-bar"
+	<body class="light">
+		<header>
+			<div>
+				<div>
+					<span></span
+					><input
+						type="search"
+						name=""
+						id="" />
+				</div>
+				<div>
+					<button></button
 					><img
-						style="width: 2rem"
-						src="./img/header-icon/magnify.svg"
-						alt="search icon"
-				/></label>
-				<input
-					type="search"
-					name="search-bar"
-					id="search-bar" />
+						src=""
+						alt="" />
+					<p>Morgan Oakley</p>
+				</div>
 			</div>
-			<div class="notifications">
-				<img
-					style="width: 2rem"
-					src="./img/header-icon/notification.svg"
-					alt="notification icon" />
-				<img
-					style="width: 2.7rem; height: 2.7rem"
-					src="./img/header-icon/user-profile.jpg"
-					alt="user profile photo" />
-				<h1>Cong TV</h1>
-			</div>
-			<div class="admin-greeting">
-				<img
-					style="width: 3.5rem; height: 3.5rem"
-					src="./img/header-icon/user-profile.jpg"
-					alt="user profile photo" />
-				<p>Hi There,<br /><span>Cong TV (@CongTV)</span></p>
-			</div>
-			<div class="header-buttons">
-				<button class="new-btn">New</button>
-				<button class="upload-btn">Upload</button>
-				<button class="share-btn">Share</button>
-			</div>
-		</div>
-		<div class="sidebar">
-			<div class="name">
-				<img
-					style="width: 3rem"
-					src="./img/dashboard-icon/view-dashboard.svg"
-					alt="dashboard icon" />
-				<p>Dashboard</p>
-			</div>
-			<ul class="settings-1">
-				<li>
+			<div>
+				<div>
 					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/home.svg"
-						alt="home icon" />
-					<p>Home</p>
+						src=""
+						alt="" />
+					<div>
+						<p>Hi There,</p>
+						<h1>Morgan Oakley (@morgan)</h1>
+					</div>
+				</div>
+				<div>
+					<button>New</button><button>Upload</button><button>Share</button>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div>
+				<span></span>
+				<h1>Dashboard</h1>
+			</div>
+			<ul>
+				<li>
+					<span>Home</span>
+					<p></p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/profile.svg"
-						alt="profile icon" />
+					<span></span>
 					<p>Profile</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/messages.svg"
-						alt="messages icon" />
+					<span></span>
 					<p>Messages</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/history.svg"
-						alt="history icon" />
+					<span></span>
 					<p>History</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/tasks.svg"
-						alt="tasks icon" />
+					<span></span>
 					<p>Tasks</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/communities.svg"
-						alt="communities icon" />
+					<span></span>
 					<p>Communities</p>
 				</li>
 			</ul>
-			<ul class="settings-2">
+			<ul>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/settings.svg"
-						alt="settings icon" />
+					<span></span>
 					<p>Settings</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/support.svg"
-						alt="support icon" />
+					<span></span>
 					<p>Support</p>
 				</li>
 				<li>
-					<img
-						style="width: 1.7rem"
-						src="./img/dashboard-icon/privacy.svg"
-						alt="privacy icon" />
+					<span></span>
 					<p>Privacy</p>
 				</li>
 			</ul>
-		</div>
-		<div class="content">
-			<div class="projects">
-				<p style="font-size: 1.3rem; font-weight: bold">Your Projects</p>
-				<div class="project-list">
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 1</p>
-							<br />
-							<p class="project-description">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
-								amet error est maxime assumenda soluta fugit, tenetur id,
-								numquam aliquid non sequi consectetur expedita atque eius
-								commodi, natus placeat earum?
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+		</nav>
+		<main>
+			<h1>Your Projects</h1>
+			<div>
+				<div>
+					<div>
+						<h2>Super Cool Project</h2>
+						<p>lorem ipsum</p>
 					</div>
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 2</p>
-							<br />
-							<p class="project-description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloremque aspernatur illum animi? Suscipit id velit assumenda
-								quisquam. Distinctio laborum magnam dolorum iusto, in sapiente
-								ipsa! Eos cum libero iste ex!
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+					<div><button></button><button></button><button></button></div>
+				</div>
+				<div>
+					<div>
+						<h2>Less Cool Project</h2>
+						<p>lorem ipsum</p>
 					</div>
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 3</p>
-							<br />
-							<p class="project-description">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-								dolores quaerat deleniti quisquam, quos delectus blanditiis
-								quidem unde eaque hic vel at in eius ducimus excepturi earum
-								nemo et. Delectus.
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+					<div><button></button><button></button><button></button></div>
+				</div>
+				<div>
+					<div>
+						<h2>Impossible App</h2>
+						<p>lorem ipsum</p>
 					</div>
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 4</p>
-							<br />
-							<p class="project-description">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Minima, odit numquam incidunt voluptatum corporis inventore
-								laborum quas laboriosam velit, quo enim consectetur iste?
-								Perspiciatis culpa sint, excepturi error nisi quo!
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+					<div><button></button><button></button><button></button></div>
+				</div>
+				<div>
+					<div>
+						<h2>Easy Peasy App</h2>
+						<p>lorem ipsum</p>
 					</div>
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 5</p>
-							<br />
-							<p class="project-description">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Facilis, quis numquam deserunt deleniti repellat dolorem porro
-								voluptas non quam recusandae vel itaque id asperiores inventore!
-								Dolorem corrupti aliquam incidunt nesciunt.
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+					<div><button></button><button></button><button></button></div>
+				</div>
+				<div>
+					<div>
+						<h2>Ad Blocker</h2>
+						<p>lorem ipsum</p>
 					</div>
-					<div class="project">
-						<div
-							class="project-status"
-							style="width: 1.5rem; background-color: greenyellow"></div>
-						<div>
-							<p class="project-name">project 6</p>
-							<br />
-							<p class="project-description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-								odit distinctio labore blanditiis nihil aliquam, temporibus vero
-								veniam rerum, repellat voluptatum recusandae corrupti aut
-								dolorum enim laborum magnam officiis autem!
-							</p>
-							<div class="project-buttons">
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/star.svg"
-									alt="star icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/watch.svg"
-									alt="watch icon" />
-								<img
-									style="width: 2rem"
-									src="./img/project-icon/fork.svg"
-									alt="fork icon" />
-							</div>
-						</div>
+					<div><button></button><button></button><button></button></div>
+				</div>
+				<div>
+					<div>
+						<h2>Money Maker</h2>
+						<p>lorem ipsum</p>
 					</div>
+					<div><button></button><button></button><button></button></div>
 				</div>
 			</div>
-			<div class="content-aside">
-				<div class="announcements">
-					<p style="font-size: 1.3rem; font-weight: bold">Announcements</p>
-					<div class="announcement-content">
+		</main>
+		<aside>
+			<section>
+				<h1>Announcements</h1>
+				<div>
+					<div>
+						<h2>Site Maintenance</h2>
+						<p>lorem ipsum</p>
+					</div>
+					<div>
+						<h2>Community Share Day</h2>
+						<p>lorem ipsum</p>
+					</div>
+					<div>
+						<h2>Updated Privacy Policy</h2>
+						<p>lorem ipsum</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Trending</h1>
+				<div>
+					<div>
+						<img
+							src=""
+							alt="" />
 						<div>
-							<p style="font-size: 1rem; font-weight: bold">Site Maintenance</p>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Deserunt, quidem ullam a adipisci veniam facilis.
-							</p>
+							<p>@tegan</p>
+							<p>World Peace Builder</p>
 						</div>
+					</div>
+					<div>
+						<img
+							src=""
+							alt="" />
 						<div>
-							<p style="font-size: 1rem; font-weight: bold">
-								Community Share Day
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Excepturi saepe minus nihil ipsa fugit molestiae?
-							</p>
+							<p>@morgan</p>
+							<p>Super Cool Project</p>
 						</div>
+					</div>
+					<div>
+						<img
+							src=""
+							alt="" />
 						<div>
-							<p style="font-size: 1rem; font-weight: bold">
-								Updated Privacy Policy
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-								aliquid minima deleniti, voluptates aperiam voluptate.
-							</p>
+							<p>@kendall</p>
+							<p>Life Changing App</p>
+						</div>
+					</div>
+					<div>
+						<img
+							src=""
+							alt="" />
+						<div>
+							<p>@alex</p>
+							<p>No Traffic Maker</p>
 						</div>
 					</div>
 				</div>
-				<div class="trending">
-					<p style="font-size: 1.3rem; font-weight: bold">Trending</p>
-					<div class="trending-content">
-						<div>
-							<img
-								style="width: 2.5rem; height: 2.5rem"
-								src="./img/header-icon/user-profile.jpg"
-								alt="user profile photo" />
-							<p><b>@CongTV</b><br /><span>Cong Velasquez</span></p>
-						</div>
-						<div>
-							<img
-								style="width: 2.5rem; height: 2.5rem"
-								src="./img/content-aside-icon/homelander.jpg"
-								alt="user profile photo" />
-							<p><b>@VoughtBaby</b><br /><span>Homelander</span></p>
-						</div>
-						<div>
-							<img
-								style="width: 2.5rem; height: 2.5rem"
-								src="./img/content-aside-icon/gustavo.jpg"
-								alt="user profile photo" />
-							<p><b>@methchicken24</b><br /><span>Gustavo Fring</span></p>
-						</div>
-						<div>
-							<img
-								style="width: 2.5rem; height: 2.5rem"
-								src="./img/content-aside-icon/jperalta.jpg"
-								alt="user profile photo" />
-							<p><b>@diehard_99th</b><br /><span>Jake Peralta</span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			</section>
+		</aside>
+		<footer></footer>
 	</body>
 </html>

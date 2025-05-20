@@ -1,0 +1,40 @@
+/* CSS RESETS */
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	font-family: "Cabin", var(--font-fallback);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* -------- */
+
+:root {
+	--primary-clr: #976df2;
+	--secondary-clr: #5f4a8c;
+	--tertiary-clr: #b294f2;
+	--content-clr: #f2f2f2;
+	--dark-clr: #0d0d0d;
+
+	--font-fallback: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+	font-family: "Roboto Flex", var(--font-fallback);
+}

@@ -68,6 +68,7 @@ header {
 
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
+	gap: 0.5rem;
 
 	padding: 1rem 3rem;
 
@@ -85,30 +86,46 @@ header {
 	width: 3.5rem;
 }
 
-header > div.header-row {
+header > .header-row {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-div.header-row > div {
+.header-row > div {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 }
 
-div.header-row:first-child > div:first-child {
+.header-row:first-child > div:first-child {
 	flex-grow: 1;
 }
 
-div.header-row:first-child > div:first-child > input {
+.header-row:first-child > div:first-child > input[type="search"] {
 	padding: 0.25rem 0.5rem;
 	border-radius: 1rem;
-	width: 50%;
+	width: 75%;
 }
 
-div.header-row:first-child > div:first-child > span {
+.header-row:first-child > div:first-child > span {
 	font-size: 1.5rem;
+}
+
+.header-row:first-child > div:last-child {
+	gap: 1.25rem;
+}
+
+.header-row:first-child > div:last-child > button > span {
+	font-size: 2rem;
+}
+
+.header-row:last-child > .header-row-buttons button {
+	background-color: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary);
+	padding: 0.5rem 1.75rem;
+	font-size: 1.25rem;
+	border-radius: 1rem;
 }
 
 nav {
@@ -118,7 +135,7 @@ nav {
 	flex-direction: column;
 	gap: 2.5rem;
 
-	padding: 0 1.5rem;
+	padding: 1rem 1.5rem;
 
 	background-color: var(--md-sys-color-primary);
 	color: var(--md-sys-color-on-primary);
